@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="src/css/index.css"> 
+    <title>Casino</title>
+  </head>
+  <body>
+      <h1 style="color: black;font-family:'Open Sans', sans-serif;" >Pichain Casino </h1>
+      <hr/>
+      <div className="main-container">
+         <h2>Betting Data</h2>
+         <div className="block">
+            <b>Minimum bet:</b> &nbsp;
+            <span id="minimumBet">0 ether</span>
+         </div>
+
+         <div className="block">
+            <b>Number of bets:</b> &nbsp;
+            <span id="numberOfBets"></span>
+         </div>
+ 
+         <div className="block">
+            <b>Total ether bet:</b> &nbsp;
+            <span id="totalBet">0 ether</span>
+         </div>
+ 
+         <div className="block">
+          <b>Last winning number:</b> &nbsp;
+          <span id="lastWinner"></span>
+         </div>
+
+        <hr/>
+
+        <h2>Instructions to Operate Casino</h2>
+
+        <div className="block">
+            <p>1. Login to your Metamask account which has minimum 1 ether <br>
+               2. Select Number of Ethers you wanna bet from dropdown<br>
+               3. Select the  number you wanna bet on<br>
+               4. Select the next account you wanna bet from<br>
+               5. Once all the bets are placed click Generate Winner
+            </p> 
+            
+         </div>
+
+
+        <hr/>
+
+        <h2>Vote for the next number</h2>
+
+        <label>
+           <b>How much Ether do you want to bet? <input className="bet-input" id="ether-bet" type="number"/></b> ether
+           <br/>
+        </label>
+
+        <ul id="numbers">
+           
+           <li>1</li>
+           <li>2</li>
+           <li>3</li>
+           <li>4</li>
+           <li>5</li>
+           <li>6</li>
+           <li>7</li>
+           <li>8</li>
+           <li>9</li>
+           <li>10</li>
+           <li>11</li>
+           <li>12</li>
+           <li>13</li>
+           <li>14</li>
+           <li>15</li>
+        </ul>
+
+        <hr/>
+        <div>
+           <input type="button" id="generate" value="Generate Winner">
+        </div>
+
+        
+     </div>
+  </body>
+  <script type="module" src="src/js/index.js"></script>
+</html>
